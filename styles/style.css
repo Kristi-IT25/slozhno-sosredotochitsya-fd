@@ -96,7 +96,7 @@
   inline-size: 70px;
   block-size: 26px;
   display: flex;
-  padding: 1.5px 13px; 
+  padding: 1.5px 13px;
 }
 
 .header__theme-menu-button:hover {
@@ -188,9 +188,9 @@ section .title-decor {
   margin-block-start: 50px;
 }
 
-.section-concentrate-card .title-decor-no-margin { /*?*/
+/*.section-concentrate-card .title-decor-no-margin {
   margin-block-end: 9px;
-}
+}*/
 
 .section-recommendation h3 {
   margin-block-end: 20px;
@@ -203,7 +203,7 @@ section .title-decor {
 .wrapper-gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .section-gallery .title-decor {
@@ -223,7 +223,7 @@ section .title-decor {
   margin-block-start: 40px; /*38px*/ 
   height: 100vh;
   min-height: 668px;
-  inline-size: 100%; 
+  inline-size: 100%;
 }
 
 .footer__title {
@@ -332,7 +332,7 @@ section .title-decor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-block-start: 20px; 
+    margin-block-start: 20px;
   }
 
   .picture {
@@ -391,11 +391,15 @@ section .title-decor {
     gap: 20px;
   }
 
-   .wrapper-card {
+  .wrapper-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-content: center;
+   }
+
+   .section-concentrate .title-decor-offset {
+    margin-block-start: 0;
    }
 
    .section-recommendation {
