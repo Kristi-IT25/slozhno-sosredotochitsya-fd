@@ -11,18 +11,18 @@
   */
   --font-family: "IBM Plex Mono", sans-serif;
   --text-font-size: 18px;
-  --color-title: rgba(219, 0, 255, 1);/*заголовок в шапке и подвале*/
-  --color-main: rgba(241, 178, 206, 1);/*цвет параграфов в section*/
-  --color-accent: rgba(255, 0, 112, 1);/*для заливок*/
+  --color-title: rgba(219, 0, 255, 1);
+  --color-main: rgba(241, 178, 206, 1);
+  --color-accent: rgba(255, 0, 112, 1);
   --bg-image-theme: url(../images/cover-image-dark.png);
   --margin-block-start: 80px;
-  --color-section-title: rgba(255, 0, 112, 1);/*цвет текста для h2 в main*/
-  --color-bg: rgba(0, 0, 40, 1);/*фон*/
-  --color-subtitle: rgba(0, 0, 40, 1);/*цвет h3 h4 p(header)*/
-  --color-button: rgba(255, 0, 112, 1);/*для кнопок*/
-  --color-decor-zone: rgba(255, 0, 112, 1);/*для уголков*/
-  --color-shadow-t-l: rgba(255, 0, 112, 1);/*для тени h1, link*/
-  --color-shadow-f: rgba(255, 0, 112, 1);/*тень для h2(футера)*/
+  --color-section-title: rgba(255, 0, 112, 1);
+  --color-bg: rgba(0, 0, 40, 1);
+  --color-subtitle: rgba(0, 0, 40, 1);
+  --color-button: rgba(255, 0, 112, 1);
+  --color-decor-zone: rgba(255, 0, 112, 1);
+  --color-shadow-t-l: rgba(255, 0, 112, 1);
+  --color-shadow-f: rgba(255, 0, 112, 1);
 }
 
 .theme-dark .decorated__element {
