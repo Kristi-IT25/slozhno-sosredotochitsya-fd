@@ -9,8 +9,45 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --font-family: "IBM Plex Mono", sans-serif;
+  --text-font-size: 18px;
+  --color-title: rgba(255, 194, 230, 1);/*заголовок в шапке и подвале*/
+  --color-main: rgba(53, 52, 48, 1);/*цвет параграфов в section*/
+  --color-accent: rgba(255, 141, 203, 1);/*для заливок*/
+  --bg-image-theme: url(../images/cover-image-light.png);
+  --margin-block-start: 80px;
+  --color-section-title: rgba(53, 52, 48, 1);/*цвет текста для h2 в main*/
+  --color-bg: rgba(255, 241, 247, 1);/*фон*/
+  --color-subtitle: rgba(53, 52, 48, 1);/*цвет h3 h4 p(header)*/
+  --color-button: rgba(53, 52, 48, 1);/*для кнопок*/
+  --color-decor-zone: rgba(53, 52, 48, 1);/*для уголков*/
+  --color-shadow-t-l: rgba(255, 141, 203, 1);/*для тени h1, link*/
+  --color-shadow-f: rgba(255, 0, 112, 1);/*тень для h2(футера)*/
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .decorated__element {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-family: "IBM Plex Mono", sans-serif;
+    --text-font-size: 18px;
+    --color-title: rgba(255, 194, 230, 1);
+    --color-main: rgba(53, 52, 48, 1);
+    --color-accent: rgba(255, 141, 203, 1);
+    --bg-image-theme: url(../images/cover-image-light.png);
+    --margin-block-start: 80px;
+    --color-section-title: rgba(53, 52, 48, 1);
+    --color-bg: rgba(255, 241, 247, 1);
+    --color-subtitle: rgba(53, 52, 48, 1);
+    --color-button: rgba(53, 52, 48, 1);
+    --color-decor-zone: rgba(53, 52, 48, 1);
+    --color-shadow-t-l: rgba(255, 141, 203, 1);
+    --color-shadow-f: rgba(255, 0, 112, 1);
+  }
+  
+  .decorated__element {
+  display: none;
+  }
 }
