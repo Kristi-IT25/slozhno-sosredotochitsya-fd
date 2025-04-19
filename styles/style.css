@@ -47,7 +47,7 @@
   border-block-end: 1px solid var(--color-decor-zone);
   inline-size: 25px;
   block-size: 25px;
-  inset-block-end: 10px; 
+  inset-block-end: 10px;
   inset-inline-start: 10px;
 }
 
@@ -214,7 +214,7 @@ section .title-decor {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   height: 100vh;
   min-height: 668px;
   margin-block-start: 40px;
