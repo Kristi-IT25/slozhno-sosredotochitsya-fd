@@ -99,7 +99,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--color-button);
+  outline: 1px solid currentColor;
 }
 
 .header__theme-menu-button:focus {
@@ -108,11 +108,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid var(--color-button);
+  border-block-end: 1px solid currentColor;
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--color-button);
+  outline: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -120,7 +120,7 @@
   align-items: center;
   color: var(--color-title);
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-size);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--color-shadow-t-l);
 }
@@ -167,7 +167,7 @@ section .title-decor {
 }
 
 .decorated__link:hover {
-  border-block-end: 1px solid var(--color-main);
+  border-block-end: 1px solid currentColor;
 }
 
 .decorated__link:focus {
@@ -175,7 +175,7 @@ section .title-decor {
 }
 
 .decorated__link:focus-visible {
-  outline: 1px solid var(--color-main);
+  outline: 1px solid currentColor;
 }
 
 .section__text {
@@ -183,12 +183,21 @@ section .title-decor {
   line-height: 23.4px;
 }
 
+.content-section p:not(:last-of-type){
+  margin-block-end: 1rem;
+}
+
 .section__title-indentation {
   margin-block-start: 50px;
 }
 
 .section-recommendation h3 {
-  margin-block-end: 20px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.section-recommendation .section__title-indentation {
+  margin-block-end: 19px;
 }
 
 .section-recommendation h4 {
@@ -203,7 +212,6 @@ section .title-decor {
 
 .section-gallery .title-decor {
   margin-block-start: 50px;
-  margin-block-end: 10px;
 }
 
 .picture {
@@ -254,7 +262,7 @@ section .title-decor {
   }
 
   .title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: var(--logo-size);
   }
 
   .header__title {
@@ -314,13 +322,13 @@ section .title-decor {
    margin-block-end: 0;
   }
 
-  .section-recommendation-card > .title-decor {
-    margin-block-start: 0;
-  }
-
   .section-gallery {
     display: block;
     margin-block-start: var(--margin-block-start, 80px);
+  }
+
+  .section-gallery .title-decor {
+    margin-block-end: 0;
   }
 
   .section-gallery .wrapper-gallery {
@@ -364,10 +372,6 @@ section .title-decor {
 
 
 @media (width >=1024px) {
-  .title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .header__theme-menu {
     justify-self: center;
     align-self: start;
